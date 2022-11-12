@@ -46,16 +46,7 @@ export class News extends Component {
     this.props.setProgress(100)
   }
 
-  prevClick = async () => {
-   
-    this.setState({
-      
-      page: this.state.page - 1,
-      
-    });
-
-    this.updateNews();
-  };
+  
   fetchMoreData = async () => {
     this.setState({
       page: this.state.page + 1});
